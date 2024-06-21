@@ -16,8 +16,8 @@ const NavItem: FC<NavItemProps> = (props) => {
   return (
     <Link
       href={link}
-      className={`flex p-4 items-center w-full hover:bg-gray-700 font-medium
-      ${pathname == link ? 'bg-gray-600 border-r-4 border-r-teal-500' : ''}
+      className={`flex p-4 items-center w-full hover:bg-sky-500 font-medium
+      ${pathname == link ? 'bg-sky-400 border-r-4 border-r-amber-400' : ''}
       `}>
       <div className="pr-2">{icon}</div>
       <div>{label}</div>
