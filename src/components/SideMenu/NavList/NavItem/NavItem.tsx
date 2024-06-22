@@ -1,4 +1,4 @@
-'use client' // Hooksを使用するため
+'use client'
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
