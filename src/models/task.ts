@@ -3,6 +3,7 @@ import mongoose, { Document } from "mongoose";
 
 // Taskインターフェースを定義
 export interface Task {
+  _id?: string;
   // タイトル
   title: string;
   // 説明
@@ -22,7 +23,7 @@ export interface TaskDocument extends Task, Document {
 }
 
 // タスク用のスキーマを定義
-const taskSchema = new mongoose.Schema<Document>(
+const taskSchema = new mongoose.Schema<TaskDocument>(
   {
     // タイトルフィールドの設定
     title: {
