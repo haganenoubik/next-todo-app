@@ -22,7 +22,7 @@ const ExpiredTaskPage = async () => {
         <h1 className="text-2xl font-bold flex items-center">期限切れのTodo</h1>
       </header>
       <div className="mt-8 flex flex-wrap gap-4">
-        {expiredTasks.map((task) => <TaskCard key={task._id} task={task} />)}
+        {expiredTasks.map((task) => <TaskCard key={String(task._id)} task={task} />)}
       </div>
     </div>
   );
