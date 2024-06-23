@@ -4,7 +4,7 @@ import mongoose, { Document } from "mongoose";
 // Taskインターフェースを定義
 export interface Task {
   // オプショナルな _id フィールドを追加
-  _id?: string;
+  _id: string;
   // タイトル
   title: string;
   // 説明
