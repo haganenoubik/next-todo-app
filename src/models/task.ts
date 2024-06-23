@@ -3,7 +3,6 @@ import mongoose, { Document } from "mongoose";
 
 // Taskインターフェースを定義
 export interface Task {
-  _id?: string;
   // タイトル
   title: string;
   // 説明
@@ -15,7 +14,7 @@ export interface Task {
 }
 
 // TaskインターフェースとmongooseのDocumentインターフェースを拡張したTaskDocumentインターフェースを定義
-export interface TaskDocument extends Task, Document {
+export interface TaskDocument extends Omit<Task, '_id'>, Document {
   // 作成日時
   createdAt: Date;
   // 更新日時
