@@ -22,7 +22,6 @@ const EditTaskForm = () => {
             type="text"
             id="description"
             name="description"
-            required
             className="block mt-2 py-1.5 w-full rounded-md border-0 shadow-sm ring-1 ring-inset ring-gray-300"
           />
         </div>
