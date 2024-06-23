@@ -22,7 +22,7 @@ const CompletedTaskPage = async () => {
         <h1 className="text-2xl font-bold flex items-center">完了したTodo</h1>
       </header>
       <div className="mt-8 flex flex-wrap gap-4">
-        {completedTasks.map((task: TaskDocument) => <TaskCard key={String(task._id)} task={task} />)}
+        {completedTasks.map((task: TaskDocument) => <TaskCard key={task._id} task={task} />)}
       </div>
     </div>
   );
